@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pendaftaran</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <style>
       * {
         padding: 0;
@@ -20,7 +28,7 @@
         background-position: right;
         background-size: cover;
         overflow-x: hidden;
-                width: 100%;
+        width: 100%;
       }
 
       section {
@@ -28,156 +36,232 @@
       }
 
       .card {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.33);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
       }
 
       .hidden {
-            opacity: 0;
-            transform: translateY(100px);
-            transition: all 1s;
-        }
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1s;
+      }
 
-        .show {
-            opacity: 1;
-            transform: translateY(0);
-        }
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-        .hidden1 {
-            opacity: 0;
-            transform: translateX(100px);
-            transition: all 1.5s;
-        }
+      .hidden1 {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 1.5s;
+      }
 
-        .show1 {
-            opacity: 1;
-            transform: translateX(0);
-        }
+      .show1 {
+        opacity: 1;
+        transform: translateX(0);
+      }
 
-        .hidden2 {
-            opacity: 0;
-            transform: translateX(-100px);
-            transition: all 1.5s;
-        }
+      .hidden2 {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 1.5s;
+      }
 
-        .show2 {
-            opacity: 1;
-            transform: translateX(0);
-        }
+      .show2 {
+        opacity: 1;
+        transform: translateX(0);
+      }
 
-        a {
-            text-decoration: none;
-            color: black;
-            transition: all 5s;
-        }
+      a {
+        text-decoration: none;
+        color: black;
+        transition: all 5s;
+      }
 
-        a::hover {
-            color: white;
-
-        }
+      a::hover {
+        color: white;
+      }
     </style>
   </head>
   <body class="d-flex justify-content-center flex-column">
-    <div class="d-flex justify-content-center  mt-5 mb-2">
+    <div class="d-flex justify-content-center mt-5 mb-2">
+      <div
+        style="
+          background-color: white;
+          padding: 5px 20px;
+          border-radius: 10px;
+          max-height: 57px;
+        "
+      >
+        <img src="/logo.png" alt="" style="max-width: 300px" />
+      </div>
+    </div>
 
-            <div style="background-color: white; padding: 5px 20px; border-radius: 10px; max-height: 57px;">
-                <img src="/logo.png" alt="" style="max-width: 300px;">
+    <section class="container d-flex justify-content-center py-5 px-2">
+      <div class="row">
+        <div class="col-md-6" style="min-width: 400px">
+          <div class="card mb-4 px-3 py-2">
+            <h1 class="text-center hidden">Pendaftaran</h1>
+            <h5 class="hidden1">
+              Sumpah Advokat & Ujian Profesi ADVOKAT (UPA)
+            </h5>
+            <h5 class="hidden2">Pelantikan di Pengadilan Tinggi DKI Jakarta</h5>
+            <h5 class="hidden1">Download Berkas</h5>
+            <div class="row mb-3">
+              <div class="gap-3">
+                <a
+                  class="mb-3"
+                  download
+                  href="/Formulir Sumpah ADVOKAT 2023.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn-info text-light">
+                    <i class="bi bi-cloud-arrow-down-fill"></i> Formulir Sumpah
+                    Advokat
+                  </button>
+                </a>
+                <a
+                  download
+                  href="/Formulir UPA 2023.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn-info text-light">
+                    <i class="bi bi-cloud-arrow-down-fill"></i> Formulir UPA
+                  </button>
+                </a>
+              </div>
             </div>
+            <h1 class="text-center hidden">Hubungi :</h1>
+            <a href="https://api.whatsapp.com/send?phone=628551007874">
+              <h4 class="hidden2">
+                <i style="color: green" class="bi bi-whatsapp"></i> 08551007874
+                Ibu Lenawati
+              </h4>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=628111999959">
+              <h4 class="hidden2">
+                <i style="color: green" class="bi bi-whatsapp"></i> 08111999959
+                Bapak Mario Wilson
+              </h4>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=6281908648888">
+              <h4 class="hidden2">
+                <i style="color: green" class="bi bi-whatsapp"></i> 081908648888
+                John Calvin
+              </h4>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=6281284652742">
+              <h4 class="hidden2">
+                <i style="color: green" class="bi bi-whatsapp"></i> 081284652742
+                Laras
+              </h4>
+            </a>
+          </div>
         </div>
-    
-    <section class="container d-flex justify-content-center  py-5 px-2">
-        
+        <div class="col-md-6" style="min-width: 400px">
+          <div class="card mb-4 px-3 py-2">
+            <h4 class="text-center">Lokasi Penyerahan Berkas</h4>
+            <p>
+              DPC Peradi Jakarta Barat, Ruko Arjuna Niaga Jl. Arjuna Utara No.
+              1-E, Jakarta Barat, DKI Jakarta
+            </p>
 
-        <div class="row">
-            <div class="col-md-6" style="min-width: 400px;">
-                <div class="card mb-4 px-3 py-2">
-                    <h1 class="text-center hidden">Pendaftaran</h1>
-                    <h5 class="hidden1 ">Sumpah Advokat & Ujian Profesi ADVOKAT (UPA)</h5>
-                    <h5 class="hidden2 ">Pelantikan di Pengadilan Tinggi DKI Jakarta</h5>
-                    <h5 class="hidden1">Download Berkas</h5>
-                    <div class="row mb-3">
-                        <div class="gap-3">
-                            <a class="mb-3"  download href="/Formulir Sumpah ADVOKAT 2023.pdf" target="_blank" rel="noopener noreferrer">
-                                <button class="btn btn-info text-light"><i class="bi bi-cloud-arrow-down-fill"></i> Formulir Sumpah Advokat</button>
-        
-                            </a>
-                            <a download  href="/Formulir UPA 2023.pdf" target="_blank" rel="noopener noreferrer">
-                                <button class="btn btn-info text-light"><i class="bi bi-cloud-arrow-down-fill"></i> Formulir UPA</button>
-        
-                            </a>
-                        </div>
-                    </div>
-<h1 class="text-center hidden">Hubungi :</h1>
-                    <a href="https://api.whatsapp.com/send?phone=628551007874">
-                        <h4 class="hidden2"><i style="color: green;" class="bi bi-whatsapp"></i> 08551007874 Ibu Lenawati</h4>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=628111999959">
-                        <h4 class="hidden2"><i style="color: green;" class="bi bi-whatsapp"></i> 08111999959 Bapak Mario Wilson</h4>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=6281908648888">
-                        <h4 class="hidden2"><i style="color: green;" class="bi bi-whatsapp"></i> 081908648888 John Calvin</h4>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=6281284652742">
-                        <h4 class="hidden2"><i style="color: green;" class="bi bi-whatsapp"></i> 081284652742 Laras</h4>
-                    </a>
-                </div>
+            <div class="text-center">
+                <a href="https://maps.app.goo.gl/JQjTGeXeAzMpKxCA9" target="_blank" rel="noopener noreferrer">
+                    <button class="btn btn-success"></button>
+                </a>
             </div>
-            <div class="col-md-6" style="min-width: 400px;">
-              
-                <div class="card mb-4 px-3 py-2">
-                  <h4 class="text-center">Lokasi Penyerahan Berkas</h4>
-                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.648230140098!2d106.78066989406943!3d-6.18519747005522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f765da18dcdd%3A0x4694b970668313b0!2sKomp.arjuna%20Niaga%20Kebon%20Jeruk!5e0!3m2!1sid!2sid!4v1701446682336!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://embed-googlemap.com">embed google maps</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
-                </div>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  class="gmap_iframe"
+                  width="100%"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.648230140098!2d106.78066989406943!3d-6.18519747005522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f765da18dcdd%3A0x4694b970668313b0!2sKomp.arjuna%20Niaga%20Kebon%20Jeruk!5e0!3m2!1sid!2sid!4v1701446682336!5m2!1sid!2sid"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe
+                ><a href="https://embed-googlemap.com">embed google maps</a>
+              </div>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  width: 100%;
+                  height: 400px;
+                }
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 100%;
+                  height: 400px;
+                }
+                .gmap_iframe {
+                  height: 400px !important;
+                }
+              </style>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-})
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      });
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => observer.observe(el));
 
+      const observer1 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show1");
+          } else {
+            entry.target.classList.remove("show1");
+          }
+        });
+      });
 
-const observer1 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show1');
-        } else {
-            entry.target.classList.remove('show1');
-        }
-    });
-})
+      const hiddenElements1 = document.querySelectorAll(".hidden1");
+      hiddenElements1.forEach((el) => observer1.observe(el));
 
-const hiddenElements1 = document.querySelectorAll('.hidden1');
-hiddenElements1.forEach((el) => observer1.observe(el));
+      const observer2 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show2");
+          } else {
+            entry.target.classList.remove("show2");
+          }
+        });
+      });
 
-const observer2 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show2');
-        } else {
-            entry.target.classList.remove('show2');
-        }
-    });
-})
-
-const hiddenElements2 = document.querySelectorAll('.hidden2');
-hiddenElements2.forEach((el) => observer2.observe(el));
+      const hiddenElements2 = document.querySelectorAll(".hidden2");
+      hiddenElements2.forEach((el) => observer2.observe(el));
     </script>
-</body>
+  </body>
 </html>
