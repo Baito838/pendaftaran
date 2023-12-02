@@ -15,7 +15,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
     <style>
       * {
@@ -34,7 +37,9 @@
         width: 100%;
       }
 
-      body, .row, .card {
+      body,
+      .row,
+      .card {
         overflow-x: hidden;
         max-width: 100%;
       }
@@ -93,6 +98,23 @@
       a::hover {
         color: white;
       }
+
+      .count div {
+        width: 60px;
+        height: min-content;
+        background-color: red;
+        border-radius: 10px;
+        color: white;
+      }
+
+      .count div p {
+        margin: -1px 0;
+      }
+
+      #day, #hour, #min, #sec {
+        font-size: 40px;
+        margin-bottom: -5px;
+      }
     </style>
   </head>
   <body class="d-flex justify-content-center flex-column">
@@ -110,54 +132,95 @@
     </div>
 
     <section class="container d-flex justify-content-center py-5">
-        <div class="col-md-6">
-          <div class="card mb-4 px-3 py-2">
-            <h1 class="text-center hidden">Pendaftaran</h1>
-            <h5 class="hidden text-center">
-              Sumpah Advokat & Ujian Profesi ADVOKAT (UPA)
-            </h5>
-            <h5 class="hidden text-center">Pelantikan di Pengadilan Tinggi DKI Jakarta</h5>
-            <h5 class="hidden text-center">Download Formulir Pendaftaran</h5>
-              <div class=" d-flex justify-content-center gap-3">
-                <a class="mb-3" download href="/Formulir Sumpah ADVOKAT 2023.pdf" target="_blank" rel="noopener noreferrer">
-                  <button class="hidden1 btn btn-danger text-light">
-                    <i class="bi bi-filetype-pdf"></i> Formulir Sumpah
-                    Advokat
-                  </button>
-                </a>
-                <a download href="/Formulir UPA 2023.pdf" target="_blank" rel="noopener noreferrer">
-                  <button class="hidden2 btn btn-danger text-light">
-                    <i class="bi bi-filetype-pdf"></i> Formulir UPA
-                  </button>
-                </a>
-              </div>
-            <hr>
-            <h1 class="text-center hidden">Hubungi</h1>
-            <p class="hidden1 text-center">Untuk info lebih lanjut hubungi nomer dibawah, klik untuk direct ke whatsapp :</p>
-            <a href="https://api.whatsapp.com/send?phone=628551007874">
-              <h4 class="hidden2">
-                <i style="color: green" class="bi bi-whatsapp"></i> 08551007874
-                Ibu Lenawati
-              </h4>
+      <div class="col-md-6">
+        <div class="card mb-4 px-3 py-2">
+          <h1 class="text-center hidden">Pendaftaran</h1>
+          <h5 class="hidden text-center">
+            Sumpah Advokat & Ujian Profesi ADVOKAT (UPA)
+          </h5>
+          <h5 class="hidden text-center">
+            Pelantikan di Pengadilan Tinggi DKI Jakarta
+          </h5>
+          <h5 class="hidden text-center">Download Formulir Pendaftaran</h5>
+          <div class="d-flex justify-content-center gap-3">
+            <a
+              class="mb-3"
+              download
+              href="/Formulir Sumpah ADVOKAT 2023.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="hidden1 btn btn-danger text-light">
+                <i class="bi bi-filetype-pdf"></i> Formulir Sumpah Advokat
+              </button>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=628111999959">
-              <h4 class="hidden2">
-                <i style="color: green" class="bi bi-whatsapp"></i> 08111999959
-                Mario Wilson
-              </h4>
+            <a
+              download
+              href="/Formulir UPA 2023.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="hidden2 btn btn-danger text-light">
+                <i class="bi bi-filetype-pdf"></i> Formulir UPA
+              </button>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=6281908648888">
-              <h4 class="hidden2">
-                <i style="color: green" class="bi bi-whatsapp"></i> 081908648888
-                John Calvin
-              </h4>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=6281284652742">
-              <h4 class="hidden2">
-                <i style="color: green" class="bi bi-whatsapp"></i> 081284652742
-                Laras
-              </h4>
-            </a>
+          </div>
+
+          <div class="d-flex justify-content-center flex-column align-items-center">
+            <p>Sisa waktu pendaftaran</p>
+            <div class="count d-flex gap-2">
+                <div>
+                    <div id="day" class="text-center text-light"></div>
+                    <p class="text-center">Hari</p>
+                </div>
+                <div>
+                    <div id="hour" class="text-center text-light"></div>
+                    <p class="text-center">Jam</p>
+                </div>
+                <div>
+                    <div id="min" class="text-center text-light"></div>
+                    <p class="text-center">Menit</p>
+                </div>
+                <div>
+                    <div id="sec" class="text-center text-light"></div>
+                    <p class="text-center">Detik</p>
+                </div>
+              
+              
+              
+              
+            </div>
+          </div>
+          <hr />
+          <h1 class="text-center hidden">Hubungi</h1>
+          <p class="hidden1 text-center">
+            Untuk info lebih lanjut hubungi nomer dibawah, klik untuk direct ke
+            whatsapp :
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=628551007874">
+            <h4 class="hidden2">
+              <i style="color: green" class="bi bi-whatsapp"></i> 08551007874
+              Ibu Lenawati
+            </h4>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=628111999959">
+            <h4 class="hidden2">
+              <i style="color: green" class="bi bi-whatsapp"></i> 08111999959
+              Mario Wilson
+            </h4>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=6281908648888">
+            <h4 class="hidden2">
+              <i style="color: green" class="bi bi-whatsapp"></i> 081908648888
+              John Calvin
+            </h4>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=6281284652742">
+            <h4 class="hidden2">
+              <i style="color: green" class="bi bi-whatsapp"></i> 081284652742
+              Laras
+            </h4>
+          </a>
         </div>
         <div class="col-md-6">
           <div class="card mb-4 px-3 py-2">
@@ -168,9 +231,15 @@
             </p>
 
             <div class="text-center mb-3">
-                <a href="https://maps.app.goo.gl/JQjTGeXeAzMpKxCA9" target="_blank" rel="noopener noreferrer">
-                    <button class="btn btn-success"><i class="bi bi-cursor-fill text-light"></i> Ke Lokasi</button>
-                </a>
+              <a
+                href="https://maps.app.goo.gl/JQjTGeXeAzMpKxCA9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn btn-success">
+                  <i class="bi bi-cursor-fill text-light"></i> Ke Lokasi
+                </button>
+              </a>
             </div>
             <div class="mapouter">
               <div class="gmap_canvas">
@@ -257,6 +326,43 @@
 
       const hiddenElements2 = document.querySelectorAll(".hidden2");
       hiddenElements2.forEach((el) => observer2.observe(el));
+    </script>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Feb 15, 2024 23:59:59").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("day").innerHTML = days;
+        document.getElementById("hour").innerHTML = hours;
+        document.getElementById("min").innerHTML = minutes;
+        document.getElementById("sec").innerHTML = seconds;
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("day").innerHTML = "0";
+          document.getElementById("hour").innerHTML = "0";
+          document.getElementById("min").innerHTML = "0";
+          document.getElementById("sec").innerHTML = "0";
+        }
+      }, 1000);
     </script>
   </body>
 </html>
